@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +37,59 @@
 			  	}
 			}
 		</script>
+		<!-- Custom Styles -->
+		<style type="text/tailwindcss">
+			@layer components {
+				.btn {
+					@apply text-xl px-5 xl:px-[1.875rem] py-[.625rem] border rounded-lg transition-colors duration-500 delay-100 ease-out;
+				}
+			}
+		</style>
 	</head>
 	<body>
-        
+        <header class="max-w-[82.5rem] mx-auto">
+			<!-- Navbar Start -->
+			<nav class="navbar px-4 py-3 md:py-6 border-b-[.0313rem] md:border-none border-accent">
+				<div class="navbar-start">
+				  <!-- Logo -->
+				  <a href="#" class="text-xl cursor-pointer">
+					<img class="md:hidden" src="assets/logo.png" alt="logo">
+					<img class="hidden md:inline" src="assets/logo-header.png" alt="Website Logo">
+				  </a>
+				</div>
+				<!-- Nav Links Start -->
+				<div class="navbar-center hidden lg:flex">
+				  <ul class="menu menu-horizontal px-1 lg:gap-6 xl:gap-8 text-xl text-dark">
+					<li><a class="p-0 hover:bg-transparent hover:text-accent">Product</a></li>
+					<li><a class="p-0 hover:bg-transparent hover:text-accent">Services</a></li>
+					<li><a class="p-0 hover:bg-transparent hover:text-accent">Contact us</a></li>
+				  </ul>
+				</div>
+				<!-- Nav Links End -->
+				<div class="navbar-end">
+				  <a class="hidden md:inline-block cursor-pointer hover:text-accent text-2xl transition-colors duration-500 delay-100 ease-out"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  <a class="hidden md:inline-block cursor-pointer hover:text-accent text-2xl transition-colors duration-500 delay-100 ease-out"><i class="fa-solid fa-cart-shopping -scale-x-[1] mx-5 xl:mx-6"></i></a>
+				  <a class="hidden md:inline-block btn border-accent bg-transparent hover:bg-accent hover:text-white text-dark">Login</a>
+				  <a class="hidden md:inline-block btn !border-accent ml-3 bg-accent hover:bg-transparent text-white hover:text-dark">Register</a>
+
+				  <!-- Dropdown Menu Start -->
+				  <div class="dropdown dropdown-bottom dropdown-end">
+					<div tabindex="0" role="button" class="p-4 lg:hidden">
+						<i class="fa-solid fa-bars text-accent text-3xl"></i>
+					</div>
+					<ul
+					  tabindex="0"
+					  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+					  <li><a class="text-dark hover:text-accent">Product</a></li>
+					  <li><a class="text-dark hover:text-accent">Services</a></li>
+					  <li><a class="text-dark hover:text-accent">Contact us</a></li>
+					</ul>
+				  </div>
+				  <!-- Dropdown Menu End -->
+				</div>
+			</nav>
+		</header>
+		<main></main>
+		<footer></footer>
     </body>
 </html>
