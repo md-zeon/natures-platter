@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Nature's Platter</title>
+		<!-- fab-icon -->
+		 <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
 		<!-- Google Fonts Sora, ADLam Display -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,12 +43,12 @@
 		<style type="text/tailwindcss">
 			@layer components {
 				.btn {
-					@apply text-xl px-5 xl:px-[1.875rem] py-[.625rem] border rounded-lg transition-colors duration-500 delay-100 ease-out;
+					@apply text-xl px-5 xl:px-[1.875rem] py-[.625rem] border rounded-lg transition-colors duration-500 ease-in;
 				}
 			}
 		</style>
 	</head>
-	<body>
+	<body class="font-sora">
         <header class="max-w-[82.5rem] mx-auto">
 			<!-- Navbar Start -->
 			<nav class="navbar px-4 py-3 md:py-6 border-b-[.0313rem] md:border-none border-accent">
@@ -60,9 +62,9 @@
 				<!-- Nav Links Start -->
 				<div class="navbar-center hidden lg:flex">
 				  <ul class="menu menu-horizontal px-1 lg:gap-6 xl:gap-8 text-xl text-dark">
-					<li><a class="p-0 hover:bg-transparent hover:text-accent">Product</a></li>
-					<li><a class="p-0 hover:bg-transparent hover:text-accent">Services</a></li>
-					<li><a class="p-0 hover:bg-transparent hover:text-accent">Contact us</a></li>
+					<li><a class="p-0 !bg-transparent hover:bg-transparent hover:text-accent">Product</a></li>
+					<li><a class="p-0 !bg-transparent hover:bg-transparent hover:text-accent">Services</a></li>
+					<li><a class="p-0 !bg-transparent hover:bg-transparent hover:text-accent">Contact us</a></li>
 				  </ul>
 				</div>
 				<!-- Nav Links End -->
@@ -88,6 +90,7 @@
 				  <!-- Dropdown Menu End -->
 				</div>
 			</nav>
+			<!-- Navbar End -->
 		</header>
 		<main></main>
 		<footer></footer>
